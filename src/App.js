@@ -1,8 +1,11 @@
 import './App.css';
-import LoginPage from './components/LoginPage';
+//import LoginPage from './components/LoginPage';
 import Header from './components/Header';
-import Body from './components/Body';
-import RegistrationPage from './components/RegistrationPage';
+//import Body from './components/Body';
+//import RegistrationPage from './components/RegistrationPage';
+import Apicall from './components/api';
+import MyForm from './components/putform';
+import LoginPage from './components/LoginPage';
 
 
 function App() {
@@ -10,8 +13,8 @@ function App() {
    <>
    <div>
     <Header />
-    <Body />
-    <RegistrationPage />
+    
+    <LoginPage />
    </div>
    </>
   );
