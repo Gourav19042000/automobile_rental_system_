@@ -16,8 +16,11 @@ const Body = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex flex-wrap justify-center">
+    <><div>
+       <h1 className="font-extrabold m-5 text-justify text-2xl">Cars </h1>
+    </div>
+      <div className="flex flex-wrap justify-center mt-2">
+       
         {items.map((carItem) => {
           return <CarCard {...carItem.car_data} />;
         })}

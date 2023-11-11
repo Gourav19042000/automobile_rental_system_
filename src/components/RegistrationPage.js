@@ -1,7 +1,7 @@
 import React from "react";
 
-import LoginImg from "../assets/familylogo.png";
-const RegPage = () => {
+import RegImg from "../assets/Registration.jpeg";
+const RegistrationPage = () => {
   return (
     <>
       {
@@ -10,12 +10,26 @@ const RegPage = () => {
       <div >
         <div
           className="bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${LoginImg})` }}
+          style={{ backgroundImage: `url(${RegImg})` }}
         >
-          <div className="h-screen flex justify-center items-center">
+          <div className="h-screen flex justify-end mr-10 items-center">
             <div className="bg-white mx-4 p-8 rounded shadow-md w-full md:w-1/2 lg:w-1/3">
-              <h1 className="text-3xl font-bold mb-8 text-center">Login</h1>
+              <h1 className="text-3xl font-bold mb-8 text-center">Registration</h1>
               <form>
+              <div className="mb-4">
+                  <label
+                    className="block font-semibold text-gray-700 mb-2"
+                    for="name"
+                  >
+                    Name
+                  </label>
+                  <input
+                    className="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    type="text"
+                    placeholder="Enter your Name"
+                  />
+                </div>
                 <div className="mb-4">
                   <label
                     className="block font-semibold text-gray-700 mb-2"
@@ -44,7 +58,7 @@ const RegPage = () => {
                     placeholder="Enter your password"
                   />
                   <a className="text-gray-600 hover:text-gray-800" href="#">
-                    Forgot your password?
+                    Already have Account Sign In
                   </a>
                 </div>
                 <div className="mb-6">
@@ -65,4 +79,4 @@ const RegPage = () => {
   );
 };
 
-export default RegPage;
+export default RegistrationPage;

@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       <div className="p-3">
-        <div className="p-3 pl-4 rounded-xl header sticky top-0 bg-white shadow-lg flex items-end justify-between px-8 py-02">
+        <div className="pb-2 pl-4 rounded-xl header sticky top-0 bg-white shadow-lg flex items-end justify-between px-8 py-02">
           <Title />
           <div>
             <nav className="nav font-semibold text-lg flex justify-end">

@@ -2,6 +2,7 @@ import './App.css';
 import LoginPage from './components/LoginPage';
 import Header from './components/Header';
 import Body from './components/Body';
+import RegistrationPage from './components/RegistrationPage';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
    <div>
     <Header />
     <Body />
+    <RegistrationPage />
    </div>
    </>
   );
