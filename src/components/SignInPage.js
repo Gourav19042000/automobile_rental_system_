@@ -1,8 +1,8 @@
 import React,{useState} from "react";
-import LoginImg from "../assets/loginpage.jpeg";
+import SignInPageImg from "../assets/SignInPageImg.jpeg";
 
 
-const LoginPage = () => {
+const SignInPage = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -15,7 +15,7 @@ const LoginPage = () => {
       <div>
         <section className="flex flex-col md:flex-row h-screen items-center">
           <div class="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-            <img src={LoginImg} alt="" class="w-full h-full object-cover" />
+            <img src={SignInPageImg} alt="" class="w-full h-full object-cover" />
           </div>
 
           <div
@@ -98,4 +98,4 @@ const LoginPage = () => {
     </>
   );
 };
-export default LoginPage;
+export default SignInPage;

@@ -1,5 +1,5 @@
 import React from "react";
-import { items } from "./constants";
+
 //<img src={CarData.car_data.image_urls[1]} alt="car Img"/>
 const CarCard = ({
   name,
@@ -14,7 +14,7 @@ const CarCard = ({
     <>
       <div className=" p-[20px]  rounded-xl ">
         <div className="shadow-xl border-solid border-2 h-[350px] border-black rounded-xl w-[250px] p-2">
-          <img className="rounded-xl w-[100%] h-[180px]" src={image_urls[0]} />
+          <img className="rounded-xl w-[100%] h-[180px]" src={image_urls[0]} alt = "img" />
           <h2 className="flex font-bold">
             <img
               className="w-[25px] h-[25px]"

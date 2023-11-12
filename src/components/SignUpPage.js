@@ -1,7 +1,7 @@
 import React from "react";
 
-import RegImg from "../assets/Registration.jpeg";
-const RegistrationPage = () => {
+import SignUpPageImg from "../assets/SignUpPageImg.jpeg";
+const SignUpPage = () => {
   return (
     <>
       {
@@ -10,7 +10,7 @@ const RegistrationPage = () => {
       <div >
         <div
           className="bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${RegImg})` }}
+          style={{ backgroundImage: `url(${SignUpPageImg})` }}
         >
           <div className="h-screen flex justify-end mr-10 items-center">
             <div className="bg-white mx-4 p-8 rounded shadow-md w-full md:w-1/2 lg:w-1/3">
@@ -79,4 +79,4 @@ const RegistrationPage = () => {
   );
 };
 
-export default RegistrationPage;
+export default SignUpPage;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CarCard from "./CarCard";
-import { items } from "./constants";
+
 
 const Body = () => {
   const [items, setItems] = useState([]);

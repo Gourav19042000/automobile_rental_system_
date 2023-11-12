@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Title = () => {
   return (
@@ -8,19 +9,19 @@ const Title = () => {
         <div>
           <ul className="flex justify-center ml-2">
             <li>
-              <a href="/">
+              <Link to ="/">
                 <img
                   className="w-[100px] h-[70px] rounded-xl"
                   src={Logo}
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 <h1 className="text-2xl font-bold ml-2 mt-3  hover:text-violet-400 duration-200 cursor-pointer">
-                  Huron Rentels
+                  Huron Rentals
                 </h1>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -39,31 +40,31 @@ const Header = () => {
             <nav className="nav font-semibold text-lg flex justify-end">
               <ul className="flex items-stretch">
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer active">
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                  <a href="/">Automobiles</a>
+                  <Link to="/">Automobiles</Link>
                 </li>
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                  <a href="/">About Us</a>
+                  <Link to="/">About Us</Link>
                 </li>
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                  <a href="/">Contact</a>
+                  <Link to="/">Contact</Link>
                 </li>
               </ul>
               <div className="relative px-4  flex justify-between items-center bg-white">
-                <a
+                <Link
                   class="block p-4 mb-2  mx-2 leading-loose text-lg text-center font-semibold  bg-gray-50 hover:bg-gray-300 rounded-xl"
-                  href="#"
+                  to="/signIn"
                 >
                   Sign in
-                </a>
-                <a
+                </Link>
+                <Link 
                   class="block p-4 mb-2 mx-2 leading-loose text-lg text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
-                  href="#"
+                  to="signUp"
                 >
                   Sign Up
-                </a>
+                </Link>
               </div>
             </nav>
           </div>
