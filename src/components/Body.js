@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CarCard from "./CarCard";
-
 
 const Body = () => {
   const [items, setItems] = useState([]);
@@ -16,11 +15,11 @@ const Body = () => {
   }, []);
 
   return (
-    <><div>
-       <h1 className="font-extrabold m-5 text-justify text-2xl">Cars </h1>
-    </div>
+    <>
+      <div>
+        <h1 className="font-extrabold m-5 text-justify text-2xl">Cars </h1>
+      </div>
       <div className="flex flex-wrap justify-center mt-2">
-       
         {items.map((carItem) => {
           return <CarCard {...carItem.car_data} />;
         })}

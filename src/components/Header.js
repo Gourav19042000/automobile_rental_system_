@@ -2,17 +2,18 @@ import React from "react";
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
-const Title = () => {
+export const Title = () => {
   return (
     <>
       <div>
         <div>
           <ul className="flex justify-center ml-2">
             <li>
-              <Link to ="/">
+              <Link to="/">
                 <img
                   className="w-[100px] h-[70px] rounded-xl"
                   src={Logo}
+                  alt="logo"
                 />
               </Link>
             </li>
@@ -59,7 +60,7 @@ const Header = () => {
                 >
                   Sign in
                 </Link>
-                <Link 
+                <Link
                   class="block p-4 mb-2 mx-2 leading-loose text-lg text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
                   to="signUp"
                 >
