@@ -3,7 +3,6 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 export const Title = () => {
-  
   return (
     <>
       <div>
@@ -66,7 +65,10 @@ const Header = () => {
                   Sign Up
                 </Link>
 
-                <button type ="button" className=" rounded-full overflow-hidden border-5 border-gray-500">
+                <button
+                  type="button"
+                  className=" rounded-full overflow-hidden border-5 border-gray-500"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -93,7 +95,9 @@ const Header = () => {
                       bottom: 0,
                       right: 0,
                     }}
-                  >3</div>
+                  >
+                    3
+                  </div>
                 </button>
               </div>
             </nav>

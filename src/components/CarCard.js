@@ -38,7 +38,6 @@ const CarCard = ({
               {pricing.payable_amount}
             </h1>
             <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-           
           </div>
           <div className="justify-center">
             {quantity === 0 ? (
