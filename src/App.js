@@ -7,7 +7,7 @@ import Body from "./components/Body";
 //import MyForm from './components/putform';
 import SignInPage from "./components/SignInPage";
 import Footer from "./components/Footer";
-import { Title } from "./components/Header";
+
 
 function App() {
   return (

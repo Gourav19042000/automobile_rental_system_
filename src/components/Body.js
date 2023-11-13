@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CarCard from "./CarCard";
 
 const Body = () => {
+  
   const [items, setItems] = useState([]);
   async function getCarData() {
     const data = await fetch(

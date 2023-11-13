@@ -3,6 +3,7 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 export const Title = () => {
+  
   return (
     <>
       <div>
@@ -34,8 +35,8 @@ export const Title = () => {
 const Header = () => {
   return (
     <>
-      <div className="p-3">
-        <div className="pb-2 pl-4 rounded-xl header sticky top-0 bg-white shadow-lg flex items-end justify-between px-8 py-02">
+      <div className="m-2 sticky top-2 ">
+        <div className="pb-2 pl-4 rounded-xl header sticky  bg-white shadow-lg flex items-end justify-between px-8 py-02">
           <Title />
           <div>
             <nav className="nav font-semibold text-lg flex justify-end">
@@ -43,9 +44,7 @@ const Header = () => {
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer active">
                   <Link to="/">Home</Link>
                 </li>
-                <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                  <Link to="/">Automobiles</Link>
-                </li>
+
                 <li className="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
                   <Link to="/">About Us</Link>
                 </li>
@@ -58,7 +57,7 @@ const Header = () => {
                   class="block p-4 mb-2  mx-2 leading-loose text-lg text-center font-semibold  bg-gray-50 hover:bg-gray-300 rounded-xl"
                   to="/signIn"
                 >
-                  Sign in
+                  Sign In
                 </Link>
                 <Link
                   class="block p-4 mb-2 mx-2 leading-loose text-lg text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
@@ -66,6 +65,36 @@ const Header = () => {
                 >
                   Sign Up
                 </Link>
+
+                <button type ="button" className=" rounded-full overflow-hidden border-5 border-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    className="w-15 h-15 object-cover rounded-full hover:bg-slate-300"
+                    viewBox="0 0 16 16"
+                    id="IconChangeColor"
+                    transform="scale(-1, 1)"
+                  >
+                    {" "}
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                      id="mainIconPathAttribute"
+                    ></path>{" "}
+                  </svg>
+                  <div
+                    style={{
+                      color: "black",
+                      width: "1.5rem",
+                      height: "1.5rem",
+                      position: "absolute",
+                      bottom: 0,
+                      right: 0,
+                    }}
+                  >3</div>
+                </button>
               </div>
             </nav>
           </div>

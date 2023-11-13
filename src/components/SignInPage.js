@@ -1,6 +1,5 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import SignInPageImg from "../assets/SignInPageImg.jpeg";
-
 
 const SignInPage = () => {
   const [password, setPassword] = useState("");
@@ -15,7 +14,11 @@ const SignInPage = () => {
       <div>
         <section className="flex flex-col md:flex-row h-screen items-center">
           <div class="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-            <img src={SignInPageImg} alt="" class="w-full h-full object-cover" />
+            <img
+              src={SignInPageImg}
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
 
           <div
@@ -65,14 +68,13 @@ const SignInPage = () => {
                   />{" "}
                   Show Password
                 </label>
-                <div className="text-right mt-2">
+                {/*{<div className="text-right mt-2">
                   <a
-                    href="#"
+                    href="/"
                     className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700"
                   >
                     Forgot Password?
-                  </a>
-                </div>
+                  </a></div>}*/}
 
                 <button
                   type="submit"
@@ -85,7 +87,7 @@ const SignInPage = () => {
               <p className="mt-8">
                 Need an account?{" "}
                 <a
-                  href="#"
+                  href="/signUp"
                   className="text-blue-500 hover:text-blue-700 font-semibold"
                 >
                   Create an account

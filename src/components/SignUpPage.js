@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import SignUpPageImg from "../assets/SignUpPageImg.jpeg";
 const SignUpPage = () => {
   return (
@@ -57,9 +57,9 @@ const SignUpPage = () => {
                     type="password"
                     placeholder="Enter your password"
                   />
-                  <a className="text-gray-600 hover:text-gray-800" href="#">
-                    Already have Account Sign In
-                  </a>
+                  <p className="text-gray-600 hover:text-gray-800" href="#">
+                    Already have Account <Link to ="/signIn" className="text-blue-700 underline" >SignIn</Link>
+                  </p>
                 </div>
                 <div className="mb-6">
                   <button
