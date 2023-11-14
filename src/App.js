@@ -7,7 +7,7 @@ import Body from "./components/Body";
 //import MyForm from './components/putform';
 import SignInPage from "./components/SignInPage";
 import Footer from "./components/Footer";
-
+import SuccessMessage from "./components/SignupSuccess";
 
 function App() {
   return (
@@ -37,6 +37,10 @@ const AppRouter = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUpPage />,
+      },
+      {
+        path: "/signUp/signUpSuccess",
+        element: <SuccessMessage />,
       },
     ],
   },
