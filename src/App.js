@@ -8,6 +8,7 @@ import Body from "./components/Body";
 import SignInPage from "./components/SignInPage";
 import Footer from "./components/Footer";
 import SuccessMessage from "./components/SignupSuccess";
+import AutoMobile from "./components/Automobile";
 
 function App() {
   return (
@@ -42,6 +43,10 @@ const AppRouter = createBrowserRouter([
         path: "/signUp/signUpSuccess",
         element: <SuccessMessage />,
       },
+      {
+        path:"/admin",
+        element:<AutoMobile />
+      }
     ],
   },
 ]);

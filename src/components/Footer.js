@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div>
-      <h1>Hello</h1>Footer
+      <Link to ="/admin"><h1>Admin login</h1> </Link>
     </div>
   );
 }
